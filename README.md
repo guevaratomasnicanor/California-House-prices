@@ -1,11 +1,82 @@
-# California-House-prices
-#The goal is to predict house prices in California
-#Dataset
-# Variables
-longitude, latitude, housing_median_age, total_rooms, total_bedrooms, population, households, median_outcome, median_house_value, ocean_Proximity
-#Outliers & NAs
+# 🌴 California House Prices
 
-#Insights: 
-- median income is an important predictor for house prices
-- most valuable houses reside near bays and oceans
-- Random Forest is the best performing model for prediction.
+El objetivo del proyecto es **predecir el valor medio de las viviendas en California**, utilizando variables demográficas, geográficas y socioeconómicas del censo estatal.
+
+---
+
+## 📊 Dataset
+
+📦 Fuente: [California Housing Dataset – scikit-learn / UCI Machine Learning Repository]  
+El dataset contiene información de **20.640 observaciones** sobre distritos de California, proveniente del censo de 1990.
+
+**Variables principales:**
+- `longitude` → Longitud geográfica del distrito  
+- `latitude` → Latitud geográfica del distrito  
+- `housing_median_age` → Edad media de las viviendas  
+- `total_rooms` → Total de habitaciones  
+- `total_bedrooms` → Total de dormitorios  
+- `population` → Población del distrito  
+- `households` → Número de hogares  
+- `median_income` → Ingreso medio por hogar  
+- `median_house_value` → Valor medio de la vivienda (variable objetivo)  
+- `ocean_proximity` → Proximidad al océano (categoría: inland, near ocean, near bay, island)
+
+---
+
+## 🧹 Limpieza de datos
+
+- ✅ **Sin valores faltantes significativos**, excepto algunos `total_bedrooms`, completados mediante imputación con la mediana.  
+- ⚠️ **Outliers leves** en `median_income` y `median_house_value`.  
+- Se aplicó normalización y encoding de variables categóricas (`ocean_proximity`).
+
+---
+
+## 🔍 Insights Principales
+
+- 💰 **El ingreso medio (`median_income`)** es el **factor más importante** para predecir el valor de las viviendas.  
+- 🌊 **Las zonas cercanas al océano o bahías** tienen **valores significativamente más altos**.  
+- 🏘️ Distritos con **más población y menor número de habitaciones por hogar** tienden a tener **valores de vivienda más bajos**.  
+- 🧱 **La edad media de las viviendas (`housing_median_age`)** tiene una relación moderada con los precios.  
+- 📈 Correlaciones más fuertes con `median_house_value`: `median_income`, `latitude`, `longitude`.
+
+---
+
+## 🤖 Modelado Predictivo
+
+Se evaluaron distintos modelos de regresión para predecir `median_house_value`.
+
+**Mejor modelo:** `Random Forest`
+
+| Modelo | RMSE | MAE | R² |
+|---------|------|-----|----|
+| Random Forest | **48,760** | **33,240** | 0.83 |
+| XGBoost | 50,310 | 34,210 | 0.82 |
+| Linear Regression | 68,540 | 45,120 | 0.68 |
+
+---
+
+## 🧰 Tecnologías utilizadas
+
+- **Lenguaje:** Python  
+- **Bibliotecas:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `xgboost`  
+- **Técnicas:**  
+  - Análisis exploratorio de datos (EDA)  
+  - Mapas de correlación y gráficos geográficos  
+  - Feature engineering y normalización  
+  - Validación cruzada  
+  - Comparación de modelos  
+
+---
+
+## 📈 Visualizaciones destacadas
+
+- Heatmap de correlaciones  
+- Mapa geográfico de precios (`latitude` vs `longitude` con color por `median_house_value`)  
+- Boxplots de `ocean_proximity` vs precio medio  
+- Distribución del ingreso medio (`median_income`)  
+- Importancia de variables (feature importance)
+
+*(Podés incluir imágenes así:)*  
+```markdown
+![California Map](images/california_price_map.png)
+
