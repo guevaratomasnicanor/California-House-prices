@@ -1,4 +1,4 @@
-# 🌴 California House Prices
+<img width="627" height="363" alt="image" src="https://github.com/user-attachments/assets/c78ec08b-98e1-4f3f-8da1-bcf657781c6b" /># 🌴 California House Prices
 
 El objetivo del proyecto es **predecir el valor medio de las viviendas en California**, utilizando variables demográficas, geográficas y socioeconómicas del censo estatal.
 
@@ -31,13 +31,20 @@ El dataset contiene información de **20.640 observaciones** sobre distritos de 
 
 ---
 
+## 🔍 Precios en el mapa:
+
+<img width="823" height="686" alt="Captura de pantalla 2025-11-12 155846" src="https://github.com/user-attachments/assets/542f2391-fa3d-4f61-b310-ec9ecc871e76" />
+
 ## 🔍 Insights Principales
 
-- 💰 **El ingreso medio (`median_income`)** es el **factor más importante** para predecir el valor de las viviendas.  
-- 🌊 **Las zonas cercanas al océano o bahías** tienen **valores significativamente más altos**.  
-- 🏘️ Distritos con **más población y menor número de habitaciones por hogar** tienden a tener **valores de vivienda más bajos**.  
-- 🧱 **La edad media de las viviendas (`housing_median_age`)** tiene una relación moderada con los precios.  
-- 📈 Correlaciones más fuertes con `median_house_value`: `median_income`, `latitude`, `longitude`.
+
+- 💰 **El ingreso medio (`median_income`)** es el **factor más importante** para predecir el valor de las viviendas.
+ 
+<img width="627" height="363" alt="Captura de pantalla 2025-11-12 153944" src="https://github.com/user-attachments/assets/977c4efd-a2d5-4f89-9ce3-72bae19f5fbb" />
+
+- 🌊 **Las zonas cercanas al océano o bahías** tienen **valores significativamente más altos**, mientras que las mas lejanas a cuerpos de agua poseen precios más economicos. 
+
+<img width="1333" height="689" alt="Captura de pantalla 2025-11-12 154706" src="https://github.com/user-attachments/assets/f9175b67-a2bb-4c4f-ad5d-d608c964a9a5" />
 
 ---
 
@@ -68,15 +75,4 @@ Se evaluaron distintos modelos de regresión para predecir `median_house_value`.
 
 ---
 
-## 📈 Visualizaciones destacadas
-
-- Heatmap de correlaciones  
-- Mapa geográfico de precios (`latitude` vs `longitude` con color por `median_house_value`)  
-- Boxplots de `ocean_proximity` vs precio medio  
-- Distribución del ingreso medio (`median_income`)  
-- Importancia de variables (feature importance)
-
-*(Podés incluir imágenes así:)*  
-```markdown
-![California Map](images/california_price_map.png)
 
