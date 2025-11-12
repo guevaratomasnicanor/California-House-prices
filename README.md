@@ -1,4 +1,4 @@
-<img width="627" height="363" alt="image" src="https://github.com/user-attachments/assets/c78ec08b-98e1-4f3f-8da1-bcf657781c6b" /># 🌴 California House Prices
+# 🌴 California House Prices
 
 El objetivo del proyecto es **predecir el valor medio de las viviendas en California**, utilizando variables demográficas, geográficas y socioeconómicas del censo estatal.
 
