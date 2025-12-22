@@ -54,13 +54,13 @@ Se evaluaron distintos modelos de regresión para predecir `median_house_value`.
 
 **Mejor modelo:** `Random Forest`
 
-| Modelo | RMSE | MAE | R² |
+| Modelo | RMSE | MAE | MAPE | R² |
 |---------|------|-----|----|
-| Random Forest | **48,760** | **33,240** | 0.83 |
-| XGBoost | 50,310 | 34,210 | 0.82 |
-| Linear Regression | 68,540 | 45,120 | 0.68 |
+| Random Forest | $43507.56 | $28337.24  | 15.88%   | 0.7987  |
+| XGBoost | $41385.76 |  | 15.21%   |  |
+| Lightgbm| $41705.99 |  | 15.50% | 0.8150
+| MLP |  $49777.52  | $33546.43 | 18.60% | 0.7366 |
 
----
 
 ## 🧰 Tecnologías utilizadas
 
