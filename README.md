@@ -26,7 +26,7 @@ El dataset contiene información de **20.640 observaciones** sobre distritos de 
 ## 🧹 Limpieza de datos
 
 - ✅ **Sin valores faltantes significativos**, excepto algunos `total_bedrooms`, completados mediante imputación con la mediana.  
-- ⚠️ **Outliers leves** en `median_income` y `median_house_value`.  
+- ⚠️ **Outliers leves** en `median_income` y `median_house_value`.  Se eliminaron los outliers de median_house_value mayores a 50000 ya que tenian un tope de precios que generaba ruido.
 - Se aplicó normalización y encoding de variables categóricas (`ocean_proximity`).
 
 ---
