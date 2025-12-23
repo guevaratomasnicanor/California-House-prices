@@ -52,16 +52,21 @@ El dataset contiene información de **20.640 observaciones** sobre distritos de 
 
 Se evaluaron distintos modelos de regresión para predecir `median_house_value`.
 
-**Mejor modelo:** `Random Forest`
+**Mejor modelo:** `xgboost`
 
 | Modelo | RMSE | MAE | MAPE | R² |
 |---------|------|-----|----|
 | Random Forest | $43507.56 | $28337.24  | 15.88%   | 0.7987  |
-| XGBoost | $41385.76 |  | 15.21%   |  |
-| Lightgbm| $41705.99 |  | 15.50% | 0.8150
+| XGBoost | $41385.76 | $27270.80 | 15.21%   | 0.8179 |
+| Lightgbm| $41271.61 | $27293.22 |  15.30% | 0.8189
 | MLP |  $49777.52  | $33546.43 | 18.60% | 0.7366 |
 
+Hiperparametros:
+   XGBOOST           eta max_depth subsample colsample_bytree nrounds     
+                    0.05         5       0.8              0.8    1000
 
+              size decay maxit    
+               12   20     0   500 
 ## 🧰 Tecnologías utilizadas
 
 - **Lenguaje:** Python  
