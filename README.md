@@ -52,7 +52,7 @@ El dataset contiene información de **20.640 observaciones** sobre distritos de 
 
 Se evaluaron distintos modelos de regresión para predecir `median_house_value`.
 
-**Mejor modelo:** `xgboost`
+**Mejor modelo:** `xgboost`, ya que los errores son menores( del 15,21% promedio en cada predicción o de 27000 dolares) y el modelo explica un 82% de la variabilidad en los datos.
 
 | Modelo | RMSE | MAE | MAPE | R² |
 |---------|------|-----|----| ----|
