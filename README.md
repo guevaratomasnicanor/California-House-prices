@@ -56,9 +56,9 @@ Se evaluaron distintos modelos de regresión para predecir `median_house_value`.
 
 | Modelo | RMSE | MAE | MAPE | R² |
 |---------|------|-----|----| ----|
-| Random Forest | $43507.56 | $28337.24  | 15.88%   | 0.7987  |
-| XGBoost | $40665.00 | $26004.76 | 14.37%  | 0.8241 |
-| Lightgbm| $41271.61 | $27293.22 |  15.30% | 0.8189
+| Random Forest | $42259.88 | $27200.42  | 14.61%   | 0.8118  |
+| XGBoost | $38995.29 | $25238.24 | 13.72%  | 0.84 |
+| Lightgbm| $41271.61 | $27293.22 |  15.30% | 0.8189 |
 | MLP |  $49777.52  | $33546.43 | 18.60% | 0.7366 |
 
 
