@@ -59,7 +59,7 @@ Se evaluaron distintos modelos de regresión para predecir `median_house_value`.
 | Random Forest | $42259.88 | $27200.42  | 14.61%   | 0.8118  |
 | XGBoost | $38995.29 | $25238.24 | 13.72%  | 0.84 |
 | Lightgbm| $39954.21 | $26076.75 |  14.18% | 0.8318 |
-| MLP |  $49777.52  | $33546.43 | 18.60% | 0.7366 |
+
 
 
 ## 🧰 Tecnologías utilizadas
